@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Node.js,hexo.js,travis.cli,Next.js,Github," />
 
 
 
@@ -83,15 +83,23 @@
 
 
 
-<meta name="description" content="成年人的世界，没有容易二字">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Haijiao&#39;s Notes">
-<meta property="og:url" content="http://haijiaogao.github.io/blogs/">
+<meta name="description" content="一、动因笔者最近很闲，于是把很多之前在ToDoList上的计划提上了日程，其中就包含搭建自己的个人blog。又由于笔者算是互联网从业者，于是选择在自己的github搭建，而不是直接写在其他的技术blog上面。 二、准备 首先，github账户一定要基本具备 考察网上成型方案，当然笔者在此走了许多的弯路，下面会详细记录笔者遇到的若干小白问题。 开动  三、方案1-基于Jekyll基于Jekyll的方">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用hexo.js + travis.cli + Next.js主题在Github上搭建个人博客">
+<meta property="og:url" content="http://haijiaogao.github.io/blogs/2020/07/14/blog/techonology/how-to-create-blog/">
 <meta property="og:site_name" content="Haijiao&#39;s Notes">
-<meta property="og:description" content="成年人的世界，没有容易二字">
+<meta property="og:description" content="一、动因笔者最近很闲，于是把很多之前在ToDoList上的计划提上了日程，其中就包含搭建自己的个人blog。又由于笔者算是互联网从业者，于是选择在自己的github搭建，而不是直接写在其他的技术blog上面。 二、准备 首先，github账户一定要基本具备 考察网上成型方案，当然笔者在此走了许多的弯路，下面会详细记录笔者遇到的若干小白问题。 开动  三、方案1-基于Jekyll基于Jekyll的方">
+<meta property="og:image" content="http://haijiaogao.github.io/blogs/2020/07/14/blog/techonology/how-to-create-blog/images/create-repo.png">
+<meta property="article:published_time" content="2020-07-14T07:08:42.000Z">
+<meta property="article:modified_time" content="2020-07-14T12:00:05.604Z">
 <meta property="article:author" content="Gaohaijiao">
-<meta property="article:tag" content="Android">
+<meta property="article:tag" content="Node.js">
+<meta property="article:tag" content="hexo.js">
+<meta property="article:tag" content="travis.cli">
+<meta property="article:tag" content="Next.js">
+<meta property="article:tag" content="Github">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://haijiaogao.github.io/blogs/2020/07/14/blog/techonology/how-to-create-blog/images/create-repo.png">
 
 
 
@@ -121,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://haijiaogao.github.io/blogs/"/>
+  <link rel="canonical" href="http://haijiaogao.github.io/blogs/2020/07/14/blog/techonology/how-to-create-blog/"/>
 
 
 
 
 
-  <title>Haijiao's Notes</title>
+  <title>使用hexo.js + travis.cli + Next.js主题在Github上搭建个人博客 | Haijiao's Notes</title>
   
 
 
@@ -146,8 +154,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -240,9 +247,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -272,9 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blogs/2020/07/14/blog/techonology/how-to-create-blog/" itemprop="url">使用hexo.js + travis.cli + Next.js主题在Github上搭建个人博客</a></h1>
+          <h1 class="post-title" itemprop="name headline">使用hexo.js + travis.cli + Next.js主题在Github上搭建个人博客</h1>
         
 
         <div class="post-meta">
@@ -357,9 +362,7 @@
       
 
       
-        
-          
-            <h2 id="一、动因"><a href="#一、动因" class="headerlink" title="一、动因"></a>一、动因</h2><p>笔者最近很闲，于是把很多之前在ToDoList上的计划提上了日程，其中就包含搭建自己的个人blog。又由于笔者算是互联网从业者，于是选择在自己的github搭建，而不是直接写在其他的技术blog上面。</p>
+        <h2 id="一、动因"><a href="#一、动因" class="headerlink" title="一、动因"></a>一、动因</h2><p>笔者最近很闲，于是把很多之前在ToDoList上的计划提上了日程，其中就包含搭建自己的个人blog。又由于笔者算是互联网从业者，于是选择在自己的github搭建，而不是直接写在其他的技术blog上面。</p>
 <h2 id="二、准备"><a href="#二、准备" class="headerlink" title="二、准备"></a>二、准备</h2><ol>
 <li>首先，github账户一定要基本具备</li>
 <li>考察网上成型方案，当然笔者在此走了许多的弯路，下面会详细记录笔者遇到的若干小白问题。</li>
@@ -440,8 +443,6 @@
 <p>Travis:<br><a href="https://docs.travis-ci.com/" target="_blank" rel="noopener">https://docs.travis-ci.com/</a></p>
 <p>Next.js:<br><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a></p>
 <h2 id="完！"><a href="#完！" class="headerlink" title="完！"></a>完！</h2>
-          
-        
       
     </div>
     
@@ -456,14 +457,44 @@
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/blogs/tags/Node-js/" rel="tag"># Node.js</a>
+          
+            <a href="/blogs/tags/hexo-js/" rel="tag"># hexo.js</a>
+          
+            <a href="/blogs/tags/travis-cli/" rel="tag"># travis.cli</a>
+          
+            <a href="/blogs/tags/Next-js/" rel="tag"># Next.js</a>
+          
+            <a href="/blogs/tags/Github/" rel="tag"># Github</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blogs/2020/07/14/about/me/" rel="next" title="关于我">
+                <i class="fa fa-chevron-left"></i> 关于我
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -473,14 +504,11 @@
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/blogs/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/blogs/page/5/">5</a><a class="extend next" rel="next" href="/blogs/page/2/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;</a>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -488,6 +516,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -508,8 +540,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -592,6 +633,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、动因"><span class="nav-number">1.</span> <span class="nav-text">一、动因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、准备"><span class="nav-number">2.</span> <span class="nav-text">二、准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、方案1-基于Jekyll"><span class="nav-number">3.</span> <span class="nav-text">三、方案1-基于Jekyll</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、方案2-基于node-js的hexo-js-Next-js主题方案"><span class="nav-number">4.</span> <span class="nav-text">四、方案2-基于node.js的hexo.js+Next.js主题方案</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-安装node：我的mac很久以前安装过node-js大概是3年前的旧事了，所以node版本很老，大概是6-x的版本，查看了一下官网上的稳定版都已经更新到了12-x而且，hexo的新版最低要求也是8-x的，所以我是从更新node开始的。"><span class="nav-number">4.0.1.</span> <span class="nav-text">1. 安装node：我的mac很久以前安装过node.js大概是3年前的旧事了，所以node版本很老，大概是6.x的版本，查看了一下官网上的稳定版都已经更新到了12.x而且，hexo的新版最低要求也是8.x的，所以我是从更新node开始的。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-安装hexo-cli"><span class="nav-number">4.0.2.</span> <span class="nav-text">2. 安装hexo-cli</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-使用hexo初始化一个项目-我的叫blog"><span class="nav-number">4.0.3.</span> <span class="nav-text">3. 使用hexo初始化一个项目,我的叫blog</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-使用travis-cli实现github-repo库的自动编译"><span class="nav-number">4.0.4.</span> <span class="nav-text">4. 使用travis-cli实现github repo库的自动编译</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-使用hexo-deployer-git-实现私有库编译"><span class="nav-number">4.0.5.</span> <span class="nav-text">5.使用hexo-deployer-git 实现私有库编译</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-Next-js主题安装以及配置"><span class="nav-number">4.0.6.</span> <span class="nav-text">6. Next.js主题安装以及配置</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Refreence："><span class="nav-number">5.</span> <span class="nav-text">Refreence：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#完！"><span class="nav-number">6.</span> <span class="nav-text">完！</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -728,6 +785,10 @@
 
 
   
+  <script type="text/javascript" src="/blogs/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/blogs/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
