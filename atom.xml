@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Haijiao&#39;s blog</title>
+  <title>Haijiao&#39;s 博客</title>
   
   
   <link href="/blogs/atom.xml" rel="self"/>
@@ -31,36 +31,6 @@
       
         &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
       
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>What&#39;s wrong with hexo</title>
-    <link href="http://haijiaogao.github.io/blogs/2020/07/13/What-s-wrong-with-hexo/"/>
-    <id>http://haijiaogao.github.io/blogs/2020/07/13/What-s-wrong-with-hexo/</id>
-    <published>2020-07-13T07:14:39.000Z</published>
-    <updated>2020-07-13T07:14:39.782Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Test Post</title>
-    <link href="http://haijiaogao.github.io/blogs/2020/07/13/Test-Post/"/>
-    <id>http://haijiaogao.github.io/blogs/2020/07/13/Test-Post/</id>
-    <published>2020-07-13T02:19:16.000Z</published>
-    <updated>2020-07-13T02:19:16.326Z</updated>
-    
-    <summary type="html">
     
     </summary>
     
