@@ -214,7 +214,7 @@
       
         
         <li class="menu-item menu-item-about">
-          <a href="/blogs/about/" rel="section">
+          <a href="/blogs/about" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
@@ -255,7 +255,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://haijiaogao.github.io/blogs/blogs/2020/07/14/about/me/">
+    <link itemprop="mainEntityOfPage" href="http://haijiaogao.github.io/blogs/blogs/2020/07/16/blog/techonology/raspberry/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Gaohaijiao">
@@ -274,7 +274,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/blogs/2020/07/14/about/me/" itemprop="url">关于我</a></h1>
+                <a class="post-title-link" href="/blogs/2020/07/16/blog/techonology/raspberry/" itemprop="url">Raspberry 上手笔记</a></h1>
         
 
         <div class="post-meta">
@@ -286,8 +286,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-14T14:53:13+08:00">
-                2020-07-14
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-16T16:27:38+08:00">
+                2020-07-16
               </time>
             
 
@@ -296,6 +296,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blogs/categories/Raspberry/" itemprop="url" rel="index">
+                    <span itemprop="name">Raspberry</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -326,9 +348,51 @@
       
         
           
-            <p>大龄已婚已育Android开发程序媛一枚，优点是已婚已育，有个儿子😂</p>
-<p>好吧，虽然如此，还是想更多尝试一下新的东西，还好年龄以及工龄没有阻碍我的好奇心。</p>
-<p>That‘s me！</p>
+            <h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>准备刷机用的东西包括（必备）：</p>
+<ol>
+<li><p>16Gtf卡一个加读卡器（<code>U盘不行，按说应该也可以，但是步骤繁琐，没有继续折腾</code>）</p>
+</li>
+<li><p>一根typeC数据线用于刷机</p>
+</li>
+<li><p>下载刷机包，由于同事手里有先前下载好的包和刷机工具，所以我省去了这一步。具体我刷的是buster的树莓派简化版。</p>
+<blockquote>
+<p>下载地址为：</p>
+</blockquote>
+</li>
+</ol>
+<ul>
+<li>刷机工具<a href="https://www.balena.io/etcher/" target="_blank" rel="noopener">etcher</a>：<code>https://www.balena.io/etcher/</code></li>
+<li>树莓派镜像：<code>https://www.raspberrypi.org/downloads/raspbian/</code></li>
+</ul>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>(以下都狠简单，在网上一搜一大堆，只是个人记录用)</p>
+<h3 id="1-（废话，有空删掉）"><a href="#1-（废话，有空删掉）" class="headerlink" title="1. （废话，有空删掉）"></a>1. （废话，有空删掉）</h3><p>购买树莓派，本人在转转上买了二手树莓派4b一个，200块。</p>
+<h3 id="2-使用刷机工具制作系统刷到tf卡上。"><a href="#2-使用刷机工具制作系统刷到tf卡上。" class="headerlink" title="2. 使用刷机工具制作系统刷到tf卡上。"></a>2. 使用刷机工具制作系统刷到tf卡上。</h3><p>步骤参考：<code>https://shumeipai.nxez.com/2019/04/17/https://www.fing.com/products/fing-appwrite-pi-sd-card-image-using-etcher-on-windows-linux-mac.html</code></p>
+<h3 id="3-树莓派首次联网，这里需要注意树莓派4b是带无线网卡的，可以直接先在tf卡制作好的系统中配置好无线ap信息。"><a href="#3-树莓派首次联网，这里需要注意树莓派4b是带无线网卡的，可以直接先在tf卡制作好的系统中配置好无线ap信息。" class="headerlink" title="3. 树莓派首次联网，这里需要注意树莓派4b是带无线网卡的，可以直接先在tf卡制作好的系统中配置好无线ap信息。"></a>3. 树莓派首次联网，这里需要注意树莓派4b是带无线网卡的，可以直接先在tf卡制作好的系统中配置好无线ap信息。</h3><p>步骤参考：<code>https://shumeipai.nxez.com/hot-explorer#beginner</code></p>
+<h3 id="4-把tf卡安装到树莓派上，开机。"><a href="#4-把tf卡安装到树莓派上，开机。" class="headerlink" title="4. 把tf卡安装到树莓派上，开机。"></a>4. 把tf卡安装到树莓派上，开机。</h3><blockquote>
+<p>首次启动<br>测试树莓派是否正常启动并且正常联网的方法：</p>
+</blockquote>
+<ol>
+<li>通过串口查看，或者连接显示设备</li>
+<li>都没有的话，只能过一会儿可以试试ssh raspberrypi.local 是否能连上。</li>
+<li>或者是通过路由器或者是<a href="https://www.fing.com/products/fing-app" target="_blank" rel="noopener">fing</a>工具查看局域网中所有设备，如果说有名字叫Raspberry相关的，应该就是树莓派.(我是这样搞的)</li>
+</ol>
+<h3 id="5-必备应用安装"><a href="#5-必备应用安装" class="headerlink" title="5. 必备应用安装"></a>5. 必备应用安装</h3><p>以下个人观点：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install vim</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-配置vnc-server"><a href="#6-配置vnc-server" class="headerlink" title="6. 配置vnc server"></a>6. 配置vnc server</h3><p>参考树莓派实验室：<code>https://shumeipai.nxez.com/2018/08/31/raspberry-pi-vnc-viewer-configuration-tutorial.html</code></p>
+<h3 id="7-我遇到的一些傻问题"><a href="#7-我遇到的一些傻问题" class="headerlink" title="7. 我遇到的一些傻问题"></a>7. 我遇到的一些傻问题</h3><ul>
+<li><p>a. 没看教程，尝试自己安装vnc server<br>结果，当然失败了，系统自带的就行</p>
+</li>
+<li><p>b.使用其他客户端尝试登陆上去<br>,树莓派4b自带的是<a href="https://www.realvnc.com/en/connect/download/viewer/" target="_blank" rel="noopener">RealVNC</a><br>如果连接的话，需要单独下载客户端，我试过mac上面的dump desktop连不上去。提示错误：</p>
+</li>
+</ul>
+<p><code>no configured security type is supported by 3.3 vnc viewer raspberry pi</code></p>
+<ul>
+<li>c. 下了RealVNC Viewer,但是傻憨憨的不知道默认用户名密码！查了半天才找到</li>
+</ul>
+<p>默认账号：<code>pi</code><br>默认密码：<code>raspberry</code></p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>不要小瞧小小的树莓派，原本我以为都是linux的，和ubuntu的差不多，但是实际上还是有很多需要注意的地方，如果提前先在网上看看，可以避免很多低级错误！切记！</p>
+<h2 id="学习链接："><a href="#学习链接：" class="headerlink" title="学习链接："></a>学习链接：</h2><p>官网：<code>https://www.raspberrypi.org/</code><br>树莓派实验室：<code>https://shumeipai.nxez.com/</code><br>树莓派技术圈：<code>https://raspberrypi.tech/</code></p>
 
           
         
@@ -425,7 +489,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/blogs/categories/">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
