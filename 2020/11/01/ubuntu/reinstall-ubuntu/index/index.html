@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Linux,Ubuntu," />
 
 
 
@@ -83,14 +83,17 @@
 
 
 
-<meta name="description" content="成年人的世界，没有容易二字">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Haijiao&#39;s Notes">
-<meta property="og:url" content="http://haijiaogao.github.io/blogs/page/2/">
+<meta name="description" content="重装系统总结1. 备份系统所在磁盘：１．~&#x2F;.*   所有常用的应用的以.开头的文件可以都copy下来，我并没有，我只copy了 .vim .oh-my-zsh .ssh  .git  ，但是在用的过程中发现有些没有考全，如bin&#x2F;（在.bashrc和.zshrc文件中有引用到的目录）以及&#x2F;opt目录下的所有的内容等 2．document&#x2F;常用软件，项目文件等3. desktop&#x2F;日常文件等，这个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一次ubuntu备份重装系统始末">
+<meta property="og:url" content="http://haijiaogao.github.io/blogs/2020/11/01/ubuntu/reinstall-ubuntu/index/">
 <meta property="og:site_name" content="Haijiao&#39;s Notes">
-<meta property="og:description" content="成年人的世界，没有容易二字">
+<meta property="og:description" content="重装系统总结1. 备份系统所在磁盘：１．~&#x2F;.*   所有常用的应用的以.开头的文件可以都copy下来，我并没有，我只copy了 .vim .oh-my-zsh .ssh  .git  ，但是在用的过程中发现有些没有考全，如bin&#x2F;（在.bashrc和.zshrc文件中有引用到的目录）以及&#x2F;opt目录下的所有的内容等 2．document&#x2F;常用软件，项目文件等3. desktop&#x2F;日常文件等，这个">
+<meta property="article:published_time" content="2020-11-01T03:02:43.000Z">
+<meta property="article:modified_time" content="2020-11-06T03:13:49.925Z">
 <meta property="article:author" content="Gaohaijiao">
-<meta property="article:tag" content="Android">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="Ubuntu">
 <meta name="twitter:card" content="summary">
 
 
@@ -121,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://haijiaogao.github.io/blogs/page/2/"/>
+  <link rel="canonical" href="http://haijiaogao.github.io/blogs/2020/11/01/ubuntu/reinstall-ubuntu/index/"/>
 
 
 
 
 
-  <title>Haijiao's Notes</title>
+  <title>一次ubuntu备份重装系统始末 | Haijiao's Notes</title>
   
 
 
@@ -146,8 +149,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -240,9 +242,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -272,9 +274,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blogs/2020/11/01/ubuntu/reinstall-ubuntu/index/" itemprop="url">一次ubuntu备份重装系统始末</a></h1>
+          <h1 class="post-title" itemprop="name headline">一次ubuntu备份重装系统始末</h1>
         
 
         <div class="post-meta">
@@ -346,9 +346,7 @@
       
 
       
-        
-          
-            <h2 id="重装系统总结"><a href="#重装系统总结" class="headerlink" title="重装系统总结"></a>重装系统总结</h2><h3 id="1-备份系统所在磁盘："><a href="#1-备份系统所在磁盘：" class="headerlink" title="1. 备份系统所在磁盘："></a>1. 备份系统所在磁盘：</h3><p>１．~/.*   所有常用的应用的以.开头的文件可以都copy下来，我并没有，我只copy了 .vim .oh-my-zsh .ssh  .git  ，但是在用的过程中发现有些没有考全，如bin/（在.bashrc和.zshrc文件中有引用到的目录）以及/opt目录下的所有的内容等</p>
+        <h2 id="重装系统总结"><a href="#重装系统总结" class="headerlink" title="重装系统总结"></a>重装系统总结</h2><h3 id="1-备份系统所在磁盘："><a href="#1-备份系统所在磁盘：" class="headerlink" title="1. 备份系统所在磁盘："></a>1. 备份系统所在磁盘：</h3><p>１．~/.*   所有常用的应用的以.开头的文件可以都copy下来，我并没有，我只copy了 .vim .oh-my-zsh .ssh  .git  ，但是在用的过程中发现有些没有考全，如bin/（在.bashrc和.zshrc文件中有引用到的目录）以及/opt目录下的所有的内容等</p>
 <p>2．document/常用软件，项目文件等<br>3. desktop/日常文件等，这个其实只是单纯备份，用的时候再解压也一样</p>
 <h3 id="2-重装后工作"><a href="#2-重装后工作" class="headerlink" title="2.重装后工作"></a>2.重装后工作</h3><h3 id="首先是apt-update，然后安装各种包-vim-git-autojump-chrome-openjdk-sublime等以及编译相关的"><a href="#首先是apt-update，然后安装各种包-vim-git-autojump-chrome-openjdk-sublime等以及编译相关的" class="headerlink" title="首先是apt-update，然后安装各种包(vim,git,autojump,chrome ,openjdk,sublime等以及编译相关的)"></a>首先是apt-update，然后安装各种包(vim,git,autojump,chrome ,openjdk,sublime等以及编译相关的)</h3><blockquote>
 <p>open-jdk，chrome，sublime等需要单独添加源以及key。</p>
@@ -400,8 +398,6 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo mv &#123;path to electronic-wechat&#125;&#x2F;electronic-wechat-linux-x64 &#x2F;opt</span><br><span class="line"></span><br><span class="line">sudo ln -s &#x2F;opt&#x2F;electronic-wechat-linux-x64&#x2F;electronic-wechat &#x2F;usr&#x2F;bin&#x2F;wechat</span><br></pre></td></tr></table></figure>
 <p>So now we just need to press ** ALT+F2 ** and enter wechat command to launch the WeChat client on Linux.</p>
 
-          
-        
       
     </div>
     
@@ -416,14 +412,42 @@
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/blogs/tags/Linux/" rel="tag"># Linux</a>
+          
+            <a href="/blogs/tags/Ubuntu/" rel="tag"># Ubuntu</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blogs/2020/07/16/blog/techonology/raspberry/" rel="next" title="Raspberry 上手笔记">
+                <i class="fa fa-chevron-left"></i> Raspberry 上手笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blogs/2020/11/06/blog/java/concurrentHashMap/index/" rel="prev" title="Difference between ConcurrentHashMap and HashMap">
+                Difference between ConcurrentHashMap and HashMap <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -433,14 +457,11 @@
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/blogs/">&lt;i class&#x3D;&quot;fa fa-angle-left&quot;&gt;&lt;&#x2F;i&gt;</a><a class="page-number" href="/blogs/">1</a><span class="page-number current">2</span><a class="page-number" href="/blogs/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/blogs/page/5/">5</a><a class="extend next" rel="next" href="/blogs/page/3/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;</a>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -448,6 +469,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -468,8 +493,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -552,6 +586,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#重装系统总结"><span class="nav-number">1.</span> <span class="nav-text">重装系统总结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-备份系统所在磁盘："><span class="nav-number">1.1.</span> <span class="nav-text">1. 备份系统所在磁盘：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-重装后工作"><span class="nav-number">1.2.</span> <span class="nav-text">2.重装后工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#首先是apt-update，然后安装各种包-vim-git-autojump-chrome-openjdk-sublime等以及编译相关的"><span class="nav-number">1.3.</span> <span class="nav-text">首先是apt-update，然后安装各种包(vim,git,autojump,chrome ,openjdk,sublime等以及编译相关的)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜狗输入法环境搭建"><span class="nav-number">1.4.</span> <span class="nav-text">搜狗输入法环境搭建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络环境搭建"><span class="nav-number">1.5.</span> <span class="nav-text">网络环境搭建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#备份文件的还原"><span class="nav-number">1.6.</span> <span class="nav-text">备份文件的还原</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一些没有备份的工作以及日常应用的安装："><span class="nav-number">1.7.</span> <span class="nav-text">一些没有备份的工作以及日常应用的安装：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -688,6 +738,10 @@
 
 
   
+  <script type="text/javascript" src="/blogs/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/blogs/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

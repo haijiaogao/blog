@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Java," />
 
 
 
@@ -83,17 +83,19 @@
 
 
 
-<meta name="description" content="大龄已婚已育Android开发程序媛一枚，优点是已婚已育，有个儿子😂 好吧，虽然如此，还是想更多尝试一下新的东西，还好年龄以及工龄没有阻碍我的好奇心。 That‘s me！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于我">
-<meta property="og:url" content="http://haijiaogao.github.io/blogs/about/">
+<meta name="description" content="ConcorrentHashMap和HashMap的区别 ConcorrentHashMap 是线程安全(写入数据的时候加锁，读取不加锁)的，而HashMap是非线程安全的（写入和读取都没有加同步）。 ConcorrentHashMap 和 HashTable 类似，两者都是线程安全，而且不允许null key和null value，如果遇到会抛出NullPointerException异常，Ha">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Difference between ConcurrentHashMap and HashMap">
+<meta property="og:url" content="http://haijiaogao.github.io/blogs/2020/11/06/blog/java/concurrentHashMap/index/">
 <meta property="og:site_name" content="Haijiao&#39;s Notes">
-<meta property="og:description" content="大龄已婚已育Android开发程序媛一枚，优点是已婚已育，有个儿子😂 好吧，虽然如此，还是想更多尝试一下新的东西，还好年龄以及工龄没有阻碍我的好奇心。 That‘s me！">
-<meta property="article:published_time" content="2020-07-14T06:53:13.000Z">
+<meta property="og:description" content="ConcorrentHashMap和HashMap的区别 ConcorrentHashMap 是线程安全(写入数据的时候加锁，读取不加锁)的，而HashMap是非线程安全的（写入和读取都没有加同步）。 ConcorrentHashMap 和 HashTable 类似，两者都是线程安全，而且不允许null key和null value，如果遇到会抛出NullPointerException异常，Ha">
+<meta property="og:image" content="http://haijiaogao.github.io/blogs/2020/11/06/blog/java/concurrentHashMap/index/images/sDoih.png">
+<meta property="article:published_time" content="2020-11-06T02:54:17.000Z">
 <meta property="article:modified_time" content="2020-11-06T03:13:49.925Z">
 <meta property="article:author" content="Gaohaijiao">
-<meta property="article:tag" content="Android">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://haijiaogao.github.io/blogs/2020/11/06/blog/java/concurrentHashMap/index/images/sDoih.png">
 
 
 
@@ -123,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://haijiaogao.github.io/blogs/about/"/>
+  <link rel="canonical" href="http://haijiaogao.github.io/blogs/2020/11/06/blog/java/concurrentHashMap/index/"/>
 
 
 
 
 
-  <title>关于我 | Haijiao's Notes</title>
+  <title>Difference between ConcurrentHashMap and HashMap | Haijiao's Notes</title>
   
 
 
@@ -244,36 +246,172 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://haijiaogao.github.io/blogs/blogs/2020/11/06/blog/java/concurrentHashMap/index/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Gaohaijiao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blogs/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Haijiao's Notes">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">关于我</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <p>大龄已婚已育Android开发程序媛一枚，优点是已婚已育，有个儿子😂</p>
-<p>好吧，虽然如此，还是想更多尝试一下新的东西，还好年龄以及工龄没有阻碍我的好奇心。</p>
-<p>That‘s me！</p>
-
+          <h1 class="post-title" itemprop="name headline">Difference between ConcurrentHashMap and HashMap</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-11-06T10:54:17+08:00">
+                2020-11-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blogs/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="ConcorrentHashMap和HashMap的区别"><a href="#ConcorrentHashMap和HashMap的区别" class="headerlink" title="ConcorrentHashMap和HashMap的区别"></a>ConcorrentHashMap和HashMap的区别</h2><ol>
+<li>ConcorrentHashMap 是线程安全(写入数据的时候加锁，读取不加锁)的，而HashMap是非线程安全的（写入和读取都没有加同步）。</li>
+<li>ConcorrentHashMap 和 HashTable 类似，两者都是线程安全，而且不允许null key和null value，如果遇到会抛出NullPointerException异常，HashMap是可以写入空的key和Value的<br>但是HashTable的缺点是，它的写入和读取操作加锁（整表锁住），所以多线程的共享的情况下，效率会比较低。实际上应用比较少，但是因为历史问题（java legency 用到），所以予以保留，ConcorrentHashMap相当于是其升级版本。<br>ConcorrentHashMap优势：<br> 1) 读取不加锁。<br> 2) 写入的时候加锁但是不是锁住整表，只是锁住变化的部分。</li>
+<li>ConcorrentHashMap在遍历的时候删除，不会抛出ConcorrentModifierException异常，HashMap会抛出异常。</li>
+</ol>
+<h2 id="HashMap-多线程同步的实现方式"><a href="#HashMap-多线程同步的实现方式" class="headerlink" title="HashMap 多线程同步的实现方式"></a>HashMap 多线程同步的实现方式</h2><p>Java的Collections中提供了Collections.synchronizedMap()方法，可以对不安全的Map，进行包装，同理，也可以通过其他的Collections.synchronizedAPI().对非线程安全的容器进行同步包装，实现同步。</p>
+<h2 id="HashMap-amp-TreeMap-amp-LinkedHashMap-amp-HashTable对比"><a href="#HashMap-amp-TreeMap-amp-LinkedHashMap-amp-HashTable对比" class="headerlink" title="HashMap&amp;TreeMap&amp;LinkedHashMap&amp;HashTable对比"></a>HashMap&amp;TreeMap&amp;LinkedHashMap&amp;HashTable对比</h2><p><img src="images/sDoih.png" alt="HashMap&amp;TreeMap&amp;LinkedHashMap&amp;HashTable对比"></p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blogs/tags/Java/" rel="tag"># Java</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blogs/2020/11/01/ubuntu/reinstall-ubuntu/index/" rel="next" title="一次ubuntu备份重装系统始末">
+                <i class="fa fa-chevron-left"></i> 一次ubuntu备份重装系统始末
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -306,8 +444,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -390,6 +537,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ConcorrentHashMap和HashMap的区别"><span class="nav-number">1.</span> <span class="nav-text">ConcorrentHashMap和HashMap的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HashMap-多线程同步的实现方式"><span class="nav-number">2.</span> <span class="nav-text">HashMap 多线程同步的实现方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HashMap-amp-TreeMap-amp-LinkedHashMap-amp-HashTable对比"><span class="nav-number">3.</span> <span class="nav-text">HashMap&amp;TreeMap&amp;LinkedHashMap&amp;HashTable对比</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
